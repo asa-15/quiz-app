@@ -227,7 +227,8 @@ const thanks = new Audio('images/thanks.wav')
 let thanks_button = document.querySelector(".btn-53")
 
 
-// イメージファイルを削除したため動かなくなりましたが当時のコードです
+// 音声ファイルを削除したため、以下の元のコードは現在は動作しません。
+// 当時は「thanks」音声の再生後に自動的にトップページへ戻る処理をしていました。
 // thanks_button.addEventListener('click', function() {
 //   thanks.play();
 //   setInterval(() => {
@@ -250,3 +251,4 @@ thanks_button.addEventListener('click', function () {
     window.location.href = "index.html";
   }
 });
+);
