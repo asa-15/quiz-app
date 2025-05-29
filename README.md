@@ -37,6 +37,7 @@ A four-choice quiz game using anime and game music, created as a school project.
 - それに伴い、一部動作に支障が出ないように処理を追加（thanksボタン後の音声再生等）。
 - CSSの冗長性やファイル構成には改善の余地がありますが、機能面はすべて正常に動作しています。
 - 展示時は音楽再生を通じて「耳から楽しませる演出」を重視しており、より没入感のある体験を提供しました。
+- レスポンシブ対応していません。
 
 ## デモ（GitHub Pagesで公開中）
 
@@ -44,3 +45,4 @@ A four-choice quiz game using anime and game music, created as a school project.
 
 ※ 音楽再生がないため、本来の体験には劣る部分がありますが、  
 クイズの出題・正誤判定・グラフ表示などのUIと処理ロジックはご確認いただけます。
+
