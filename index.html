@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@24&family=Sixtyfour:SCAN@7&display=swap"
+    rel="stylesheet">
+
+  <title>課題</title>
+
+</head>
+
+<body>
+
+  <div id="loading">
+    <div class="bg">
+      <div class="text">
+        <p>
+          <span>L</span>
+          <span>e</span>
+          <span>t</span>
+          <span>'</span>
+          <span>s</span>
+          <span></span>
+          <span></span>
+          <span>t</span>
+          <span>r</span>
+          <span>y</span>
+          <!-- <span>z</span> -->
+          <span>!</span>
+        </p>
+        <div>
+          <p class="text2">
+            CLICK
+          </p>
+        </div>
+      </div>
+
+      <div class="wrapper  overlay">
+        <video src="images/myvideo.mp4" autoplay muted loop></video>
+
+
+
+        <div class="game">
+          <h2>GAME</h2>
+          <p>Level</p>
+          <a href="anime_easy.html"><button class="btn" type="button">
+              <strong>NORMAL</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button></a>
+          <a href="anime_easy.html">
+            <button class="ui-btn">
+              <span>
+                Challenger
+              </span>
+            </button>
+          </a>
+
+
+        </div>
+      
+        <div class="ANIME">
+          <h2>ANIME</h2>
+          <p>Level</p>
+          <a href="anime_easy.html">
+          <button class="btn" type="button">
+            <strong>NORMAL</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button></a>
+
+          <a href="anime_easy.html"><button class="ui-btn">
+            <span>
+              Challenger
+            </span>
+          </button></a>
+        </div>
+
+      </div>
+      <!--wrapper-->
+
+
+
+
+      <script>
+        let game = document.querySelector(".game")
+        let ANIME = document.querySelector(".ANIME")
+        let loading = document.querySelector("#loading")
+        let wrapper = document.querySelector(".wrapper")
+        let text = document.querySelector(".text")
+        let text2 = document.querySelector(".text2")
+
+        loading.addEventListener('click', function () {
+          text.style.display = "none"
+          text2.style.display = "none"
+          wrapper.classList.remove('overlay');
+          game.style.display = "block"
+          ANIME.style.display = "block"
+        }, false);
+      </script>
+</body>
+
+</html>
